@@ -1,0 +1,9 @@
+{
+    "700": {
+        "name": "admin",
+        "email": "admin@ikarrental.hu",
+        "password": "admin",
+        "admin": "yes",
+        "id": 700
+    }
+}

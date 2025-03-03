@@ -1,0 +1,463 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #1c1c1c;
+    color: #fff;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 20px;
+    background-color: #333;
+    max-width: 100%;
+}
+
+.newcar h1 {
+    color: #ffa500;
+}
+
+.newcar form {
+    background-color: #333;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.newcar label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 5px;
+}
+
+.newcar button {
+    background-color: #ffa500;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.newcar button:hover {
+    background-color: #ff8c00;
+}
+
+.newcar .error {
+    color: #ff4d4d;
+    margin-bottom: 15px;
+}
+
+.newcar .success {
+    color: #4caf50;
+    margin-bottom: 15px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+header .actions a {
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 20px;
+    background-color: #ffa500;
+    border-radius: 5px;
+    margin-left: 10px;
+}
+
+.filter{
+    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 20px; 
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+main {
+    padding: 20px;
+}
+
+.filter {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.car-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.car {
+    background-color: #2e2e2e;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+}
+
+.car img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.car h3 {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.car .price {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.car button {
+    background-color: #ffa500;
+    border: none;
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.car button:hover {
+    background-color: #ff8c00;
+}
+
+/* auto adatok */
+
+.car-detail {
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+
+.car-image{
+    width: 50%;
+    margin: 0 auto;
+    float: right;
+}
+
+.car-detail img {
+    max-width: 100%;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.car-detail h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.car-detail .price {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.car-detail p {
+    font-size: 16px;
+}
+
+.car-detail button {
+    background-color: #ffa500;
+    border: none;
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.car-detail button:hover {
+    background-color: #ff8c00;
+}
+
+#reszlet{
+    text-align: center;
+}
+
+.middle{
+    text-align: center;
+}
+
+.car-info {
+    flex: 1; 
+}
+
+.car-info h2 {
+    margin-top: 0; 
+}
+
+.car-info .price {
+    font-size: 1.2em;
+    margin: 10px 0; 
+}
+
+.car-info p {
+    margin: 5px 0; 
+}
+
+/* Belepes */
+#page-title {
+    font-size: 36px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#login-form , #registration-form{
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #1e1e1e;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    width: 300px;
+}
+
+#login-form label {
+    align-self: flex-start;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+#login-form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: #2e2e2e;
+    color: #fff;
+}
+
+#login-form input::placeholder {
+    color: #bbb;
+}
+
+#login-button {
+    width: 100%;
+    padding: 10px;
+    background-color: #ffc107;
+    color: #000;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+#login-button:hover {
+    background-color: #e6a500;
+    transform: scale(1.05);
+}
+
+#login-button:active {
+    transform: scale(1);
+}
+
+#error-messages {
+    text-align: center;
+    list-style: none;
+    padding: 0;
+    margin-bottom: 15px;
+    color: #ff6b6b;
+}
+
+#error-messages li {
+    text-align: center;
+}
+
+/* admin */ 
+#delete{
+    background-color: red;
+}
+
+#edit{
+    color: black;
+    background-color: white;
+}
+
+#registration-form label {
+    align-self: flex-start;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+#name-input, #email-input, #password-input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 4px;
+    background-color: #2a2a2a;
+    color: white;
+}
+
+#name-input::placeholder, #email-input::placeholder, #password-input::placeholder {
+    color: #aaa;
+}
+
+#submit-button {
+    background-color: #f1c40f;
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%;
+}
+
+#submit-button:hover {
+    background-color: #d4ac0d;
+}
+
+.booking-form {
+    margin-top: 15px;
+}
+
+.booking-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 14px;
+    color: #fff;
+}
+
+.booking-form input[type="date"] {
+    width: calc(50% - 10px); 
+    padding: 10px;
+    margin: 5px;
+    border: 1px solid #555;
+    border-radius: 5px;
+    background-color: #292929; 
+    color: #fff;
+    font-size: 14px;
+}
+
+.booking-button {
+    background-color: #f79f1f; 
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 15px;
+    transition: background-color 0.3s ease;
+}
+
+.booking-button:hover {
+    background-color: #e88700; 
+}
+
+.status-container {
+    margin: 50px auto;
+    padding: 30px;
+    background-color: #1e1e1e;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 500px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+}
+
+.status-icon {
+    background-color: #f9c744;
+    color: #fff;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    line-height: 100px;
+    font-size: 48px;
+    margin: 20px auto;
+}
+
+.status-title {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.status-details {
+    font-size: 16px;
+    color: #aaa;
+}
+
+.profile-button {
+    background-color: #f9c744;
+    color: #000;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.profile-button:hover {
+    background-color: #e3b633;
+}
+
+
+@media (max-width: 1200px) {
+    .filter {
+        grid-template-columns: repeat(2, 1fr); 
+    }
+}
+
+@media (max-width: 768px) {
+    .filter {
+        grid-template-columns: 1fr; 
+    }
+    .car-detail{
+        display: inline-block;
+    }
+    .car-image{
+        float: none;
+    }
+}
+
+@media (max-width: 630px) {
+    #adminhead{
+        display: inline-block;
+        width: 100%;
+        text-align: center;
+    }
+    #adminhead div{
+        margin-top: 2rem;
+    }
+}
+
+@media (max-width: 423.9px) {
+    .actions {
+        margin: 0 auto;
+        margin-top: 1.5rem; 
+    }
+
+    header h1{
+        margin: 0 auto;
+    }
+}
